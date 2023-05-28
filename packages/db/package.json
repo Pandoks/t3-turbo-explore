@@ -5,6 +5,7 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "clean": "rm -rf .turbo node_modules",
     "with-env": "dotenv -e ../../.env --",
     "dev": "pnpm with-env prisma studio --port 5556",
